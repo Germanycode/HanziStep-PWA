@@ -99,4 +99,3 @@ Các luồng cốt lõi đã được triển khai và có unit/E2E test. Tuy nh
 ## Đóng góp
 
 Đây hiện là ứng dụng cá nhân cho một người dùng trên một máy. Nếu phát triển tiếp, hãy đọc [AGENT.md](AGENT.md) trước khi thay đổi thuật toán, schema dữ liệu hoặc quy ước của dự án; mọi thay đổi hành vi cần đi kèm kiểm thử phù hợp.
-
