@@ -1,0 +1,107 @@
+@import 'tailwindcss';
+
+/* Theme tokens ported from English Extension review/review.css.
+   Dark (default): indigo/violet. Light: Flip7 teal + coral. */
+:root {
+  color-scheme: dark;
+  --bg: #0f0f1a;
+  --surface: #1a1a2e;
+  --surface-2: #16213e;
+  --border: rgba(99, 102, 241, 0.18);
+  --border-hover: rgba(99, 102, 241, 0.45);
+  --primary: #6366f1;
+  --primary-end: #8b5cf6;
+  --accent: #a855f7;
+  --text-main: #e2e8f0;
+  --text-muted: #64748b;
+  --text-sub: #94a3b8;
+  --success: #10b981;
+  --danger: #f43f5e;
+  --warning: #f59e0b;
+  --seal: #c62828;
+  /* Tone colours: 1 red, 2 amber, 3 green, 4 blue, neutral grey. */
+  --tone-1: #f87171;
+  --tone-2: #fbbf24;
+  --tone-3: #4ade80;
+  --tone-4: #60a5fa;
+  --tone-5: #94a3b8;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #eff8f7;
+  --surface: #ffffff;
+  --surface-2: #e8f6f5;
+  --border: rgba(43, 168, 162, 0.22);
+  --border-hover: rgba(43, 168, 162, 0.46);
+  --primary: #2ba8a2;
+  --primary-end: #3cc4bd;
+  --accent: #ef6c4a;
+  --text-main: #173331;
+  --text-muted: #66827f;
+  --text-sub: #3f625f;
+  --success: #27ae60;
+  --danger: #e74c3c;
+  --warning: #e6b800;
+  --seal: #c62828;
+  --tone-1: #dc2626;
+  --tone-2: #d97706;
+  --tone-3: #16a34a;
+  --tone-4: #2563eb;
+  --tone-5: #64748b;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-line-hover: var(--border-hover);
+  --color-primary: var(--primary);
+  --color-primary-end: var(--primary-end);
+  --color-accent: var(--accent);
+  --color-fg: var(--text-main);
+  --color-muted: var(--text-muted);
+  --color-sub: var(--text-sub);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+  --color-seal: var(--seal);
+  --color-tone-1: var(--tone-1);
+  --color-tone-2: var(--tone-2);
+  --color-tone-3: var(--tone-3);
+  --color-tone-4: var(--tone-4);
+  --color-tone-5: var(--tone-5);
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, 'Microsoft YaHei UI', sans-serif;
+  --font-hanzi: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', 'Source Han Sans SC', sans-serif;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--primary) 35%, transparent);
+  }
+}
+
+@layer utilities {
+  .font-hanzi {
+    font-family: var(--font-hanzi);
+  }
+}

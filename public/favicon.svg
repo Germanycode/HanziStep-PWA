@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- HanziStep seal: a brush-stroke 汉 drawn with paths (no font needed). -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="#c62828"/>
+  <rect x="46" y="46" width="420" height="420" rx="70" fill="none" stroke="#ffffff" stroke-opacity="0.85" stroke-width="10"/>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="34">
+    <path d="M128 150 L170 184"/>
+    <path d="M106 240 L150 272"/>
+    <path d="M110 392 L180 318"/>
+    <path d="M222 150 H392 Q360 300 214 396"/>
+    <path d="M262 232 Q326 344 410 398"/>
+  </g>
+</svg>

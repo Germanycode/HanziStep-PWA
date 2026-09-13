@@ -1,0 +1,6 @@
+dist
+dev-dist
+data-raw
+public/data
+public/music
+package-lock.json

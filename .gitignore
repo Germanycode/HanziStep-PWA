@@ -1,0 +1,23 @@
+node_modules
+dist
+dev-dist
+coverage
+playwright-report
+test-results
+*.local
+.vite
+.env
+.env.*
+!.env.example
+npm-debug.log*
+Thumbs.db
+.DS_Store
+
+# Raw dataset downloads (see scripts/fetch-datasets.ts)
+data-raw
+
+# Generated data and audio (rebuild with `npm run data:build`).
+# CC BY-SA data must not be published without attribution.
+public/data/v1
+public/audio/syllables
+public/audio/words
