@@ -21,3 +21,6 @@ data-raw
 public/data/v1
 public/audio/syllables
 public/audio/words
+
+# Local agent instructions
+AGENT.md
